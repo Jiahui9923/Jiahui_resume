@@ -1,0 +1,46 @@
+
+nav{
+  font-size: 25px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  margin:0;
+  padding:0;
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+  color:black;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0.5em 20px;
+
+  position: relative; 
+  cursor: pointer;
+}
+nav li::before,ul li::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  height:2px;
+  width:0;
+  background-color:white;
+  transition: all .2s linear;
+}
+nav li:hover::before{
+  width: 100%;
+  left: 0px;;
+}
+nav li:hover::after{
+   width: 50%;
+}
+nav li a{
+  text-decoration: none;
+  color:white;
+}
+
