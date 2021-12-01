@@ -1,0 +1,40 @@
+#About .about_section{
+    display: grid;
+    /* margin-top: 10px; */
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    /* repeat(2,1fr) */
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    grid-template-areas: 
+    'about_name    pic'
+    'about_me     pic'
+    'about_info     pic'
+    ;
+    padding-left: 100px;
+  }
+  
+  #About .about_name{
+    color: white;
+    font-size: 20px;
+  }
+  #About .about_me{
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  
+  #About .about_info{
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  #About .pic{
+    grid-row: span 3;
+    border-radius: 50%;
+    width: 70fr;
+  }
+
+  .about_name{
+      font-weight: bold;
+  }
