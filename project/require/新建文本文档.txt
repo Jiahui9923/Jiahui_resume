@@ -1,0 +1,100 @@
+1.
+本文件的主要受众人群是那些想了解软件开发思路的人以及想了解如何进行软件设计的人。除此之外，也提供学习和开发的思路，因此，适合任何想从最基础学习的人。
+
+
+本软件的主要使用对象是帮助对各种样式巧克力上瘾的人。除此之外，我们的目标也是希望改善希望自己减轻对巧克力依赖的人。
+The main use of this software is to help people addicted to various types of chocolate. In addition, our goal is also to improve people who want to reduce their dependence on chocolate.
+2.
+
+
+
+3.
+产品的主要
+
+获取会员信息
+提供服务日期
+获取六位服务代码
+获得服务
+
+I made the first flow chart, but this is definitely not standard, I will continue to improve later. Hopefully this will be useful. I'm not sure if they're all right. But we can discuss any problem together.
+
+
+我做了第一个流程图，但它肯定不是标准的，我知道它很难看，所以我以后会用专业软件再重新做一个新的。希望你觉得这个有用。我不确定他们是否还好。但是我们可以一起讨论任何事情。
+
+I made the first flow chart, but it is definitely not standard, I know it is ugly, so I will make a new one with professional software in the future. Hopefully this will be useful. I'm not sure if they're okay. But we can discuss anything together later.
+
+
+这个函数的主要功能是收集信息并且展示出所有的信息在显示器上。
+
+
+
+针对用户，用户需要单独的界面来显示提交任务的时间以及需要的服务等，因此，需要单独的界面保证用户进行数据的输入以及系统对用户输入信息的反馈。
+
+而所有的数据存储都应该放在数据库中并且从数据库中进行调用和使用。
+
+针对provider，我们也需要不同的界面来保证和用户获取的信息有差别，因此，需要单独的数据输入保证provider有足够的信息来对用户进行标记。
+
+针对EFT，我们也依然需要一些功能来保证能正确获取EFT收费情况并且保证会员费用的正常缴纳。虽然不需要提供任何数据界面，但是需要保证数据库的信息会及时更新。
+
+因为账单涉及到所有人的利益，因此为了确保信息的安全性，我们需要单独对账单进行处理。
+所有收费主要分为两类，一类是会员费用，一类是服务费。
+
+有效期：xxx
+
+
+
+针对会员费，我们的费用不需要体现在每周的账单里面，但是需要有单独的邮件提醒并且通过EFT判断是否延长会员有效期。
+
+
+
+会员费用应该是独立的，并且一定要和服务费区分开。在每个月计算盈利的时候一定要单独计算。而不是和服务费一起计算在收费里面。
+
+针对服务费，因为涉及到不同类型的收费，因此，需要一个总收费变量以及其他各个详细收费的具体数据。具体数据内容由EFT的数据库来进行收集。
+除此之外，因为账单数据涉及隐私，因此，我们在接受数据的时候一定保证数据的安全。
+I don't know. Lol, I want to refer to the system time and make sure the user submits the request by the system time. This allows confirmation of user input. I assume this is also a non-functional requirement?
+
+
+
+数据的存储和查找时间的确可以大幅减少，但是与此同时会使用更多的内存。
+scalability
+extetnsibility
+
+为了保证系统在扩展的过程中依然可以保持较高的效率。通过哈希表来更好的提高代码效率。
+
+除此之外，我们可以提高
+
+为了保证代码后期方便整理并且添加更多内容，在初步设计的时候要保证代码有
+
+我也不知道。lol，我想引用系统时间，并且通过系统时间来确保用户提交请求的时间。这样可以对用户的输入信息进行确认。我认为这应该也是一个非功能需求吧？
+
+Provider
+EFT
+
+CHocAn
+
+
+Extensibility
+
+提供会员服务，所有的服务器得到使用仅限于会员。
+
+我们致力于开发帮助那些对各种巧克力上瘾的人来减少巧克力的摄入的软件。
+
+软件开发主要围绕用户和开发公司展开。我们的软件只提供会员服务，并且提供多种多样的线上服务
+
+
+Software scalability architecture design, the ability to sustainably expand and improve system functions with minimal impact on the existing system.
+
+使用更多的简单和稳定的接口来和另一个模块进行交互，这样就可以保证后期代码有更好的扩展性而不需要修改更多的核心代码。
+
+系统时间的调用首先可以很好的帮助我们规避很多不必要的错误，比如我们可以通过时间来获得出生年龄的正确范围，而不是随意的数字。这样就可以减少因错误生日和年龄带来的运行错误。其次，通过时间认证，可以更好的确认服务时间和用户提供的时间是否一致。这样，我们可以验证使用者是否正确的使用服务。
+最后，时间验证也可以很好的规避不同地区的人使用相同账号的问题。（防止账号密码共用问题）
+First of all, calling the system time can help us avoid many unnecessary errors. For example, we can obtain the correct range of birth ages by the time, instead of random numbers. This reduces runtime errors due to incorrect birthdays and ages. Second, through time authentication, you can better confirm whether the service time is consistent with the time provided by the user. In this way, we can verify that the consumer is using the service correctly.
+Finally, time verification can also avoid the problem that people in different regions use the same account. (Prevent account and password sharing problems)
+
+我已经累死不行了。睡觉去了。明天早上最后再写一写。
+
+I'm exhausted. Went to bed. I'll do it for the last time tomorrow morning.
+bonne nuit（My new vocabulary :D）
+
+
+

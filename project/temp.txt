@@ -1,0 +1,71 @@
+系统测试的主要目的：
+1） 测试整个系统并且确认信息系统等其他系统都正确组装并且对真个系统进行测试。
+2）验证系统是否满足了需求规格的定义。
+3）验证系统的执行功能和非功能测试，比如可用性，性能，以及负载等。
+4）通过真是样例来测试系统的可用性。
+系统测试类型：
+1） performance testing
+2) load testing
+3) stress testing:
+4) scalability testing:
+
+
+
+
+
+检测申请服务请求正确运行并提供服务号码
+
+本文档用于深入分析我们的巧克力爱好者匿名软件的设计。该软件将使巧克力爱好者匿名组织的医疗供应商能够跟踪成员信息，在系统内验证成员状态，跟踪成员访问和所有相关信息，生成访问报告，以及计算和生成医疗程序的账单。
+
+具体来说，本文档将为读者提供项目的设计考虑因素和约束条件，系统的整体概述，系统架构及其功能的分析，以及利用技术术语和伪代码对系统设计进行深入分析，以提供软件将如何运行的详细摘要。
+ben
+
+本文档用于对巧克力爱好者匿名软件进行最后的程序测试。该文档将会对软件里面的具体函数以及整体框架进行测试。其中包含测试所有的函数功能是否符合预期，以及测试所有的子系统之间是否可以正确的进行操作。具体来说是通过unite测试，，smoke 测试，以及系统测试来验证软件是否可以正常的投入使用并且尽力降低程序错误出现的可能性。
+Chocoholics Anonymous software
+
+
+测试计划的主要目的有三个。首先，在产品中，我们的测试是为了发现更多的错误（或者bug）。其次，我们使用较低的成本来验证我们的软件质量。最后，我们的测试目的也是为了可以创造出更高质量的程序并且对发现的错误进行更改降低后期因为bug带来的严重利益损害。
+
+本文件的范围主要包含三种测试，分别是:unite testing, smoke testing, and system testing. 
+
+针对不同的测试方法，我们主要通过验证来完成的。
+针对验证阶段，团队的主要工作是检查软件，系统或者框架是否符合文档要求。(不同的测试采用了不同的验证手段，但是目的都是验证是否符合文档要求)。
+
+
+首先，针对程序员，我们的文件主要是确保在我们所有的测试类型以及测试内容包含了全部代码，尽力确保所有代码以及更可能多的测试样例被我们记录并且测试。其次，针对管理者，也是让管理者有更多的机会了解我们在测试过程中如何使用样例来让程序运行。最后，最后我们的客户，客户需要了解更多结果并且了解程序的完成度以及产品质量。我们也会通过测试来提供更多的可视化的完成度和产品质量来帮助客户了解产品的状况。
+
+
+本软件使用三种测试方法：
+
+单元测试：
+我们使用单元测试来保证我们可以检测每一个函数。因为单元测试是针对最细小的函数，因此，在我们每一次修改之后，都需要对系统进行单元测试。
+
+
+冒烟测试：
+测试的主要目的是验证系统的主要功能是否能正常工作。 冒烟测试的主要解决类似程序是否可以正确运行或者界面能否打开等最基本的操作。因此，在我们运行冒烟测试的时候，通常测试运行会很快并且可以给我们提供更好的反馈。我们针对的是系统的重要功能而不是全部功能。
+
+
+
+系统测试：
+系统测试检测的是整个系统作为一个整体的行为。我们使用系统测试是因为它有助于我们对整个系统进行评判，保证整个系统都符合我们的要求。除此之外，我们也要检查系统是否按照我们的要求进行相关工作。保证每个模块都正确运行并且相互关联。
+
+Unit tests:  
+We use unit tests to make sure we can test every function.  Because unit tests are for the tiniest functions, we need to unit test the system after every change we make.  
+ 
+ 
+Smoke test:  
+The main purpose of the test is to verify that the main functions of the system can work properly.  The smoke test mainly solves the most basic operations such as whether similar programs can run correctly or whether the interface can be opened.  As a result, when we run smoke tests, they usually run faster and give us better feedback.  We are targeting the important features of the system rather than all the features.  
+ 
+ 
+ 
+System test:  
+System testing examines the behavior of the whole system as a whole.  We use system testing because it helps us evaluate the entire system and make sure it meets our requirements.  In addition, we also need to check that the system is working as we want it to.  Ensure that each module works correctly and is related to each other.  
+
+
+
+
+
+
+
+
+
